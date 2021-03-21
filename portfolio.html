@@ -24,7 +24,7 @@
 
   p {
     font-family:garamond;
-    font-size:100%
+    font-size:120%
   }
 
   div.a {
@@ -59,7 +59,6 @@
         <img src="Images/tttscreen.png" height="150">
         <img src="Images/tttcomments.png" height="150">
         <p>We created a program in which the user can play tic tac toe, alternating turns between placing Spongebob or Patrick. Whoever’s turn is first will be Patrick, and when they click on a square, if empty, a turtle will move to that space and draw Patrick. If that place has already been chosen, the user will get a message saying “_____[either Patrick or Spongebob] is already on that square. Choose again!” Once Patrick or spongebob are in 3 spaces next to each  other in a horizontal, vertical, or diagonal line, the user will get a message saying “_____[either Patrick or Spongebob] won the match!”</p>
-        <br>
         <br>
         <p>We did this by first making two separate python files, one that uses the turtle module to draw spongebob, and the other to draw Patrick which were defined as a function either called make_patrick or make_spongebob. We imported these files into the main file. In the main file we defined an additional 4 functions. They were called make_board, search_winner, find_square, and make_next_guess and written in that order. After defining the functions, we made a list, with 9 empty quotations, one for each square. The program then called the make_board function  which drew the lines to make the tic tac toe board using the turtle module. Then we used the method, turtle.onscreenclick, with the function, find_square, as its parameter. This function would determine which square was clicked on using x and y as parameters. After determining the chosen square through conditional statements it would call the function make_next_guess with the appropriate coordinates and index in the list. This function used conditional statements to determine whether the chosen square was already taken, and, if not, it would draw the figure in the appropriate coordinates (using the make_patrick/spongebob function) and add the name (either spongebob or patrick) to the list at the appropriate index.  Meanwhile, the search_winner function would be called. This function used conditional statements as well as and/or statements to find the winner by checking if the appropriate indexes were equal to each other. </p>
 
